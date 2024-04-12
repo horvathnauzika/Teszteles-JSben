@@ -51,5 +51,8 @@ QUnit.module("szamolas", function () {
     assert.equal(szamolas(), "Két paraméter szükséges!");
   });
 
+  QUnit.test("Több, mint 2 paraméter van megadva", (assert) => {
+    assert.equal(szamolas(2, 3, 6), "Két paraméter szükséges!");
+  });
 
 });
